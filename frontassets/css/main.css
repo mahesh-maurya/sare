@@ -729,3 +729,10 @@ position: relative;
 left: -11px;
 color: #fff;
 }
+.name-msg{
+font-size: 15px;
+color: rgb(0, 87, 156);
+font-weight: bold;
+position: relative;
+bottom: 33px;
+}
