@@ -90,7 +90,7 @@ class martyr_model extends CI_Model
         FROM `martyr_martyr` 
         LEFT OUTER JOIN `martyr_regiment` ON `martyr_martyr`.`regiment`= `martyr_regiment`.`id`
         LEFT OUTER JOIN `navigation` ON `martyr_regiment`.`subcategory`= `navigation`.`id`
-        WHERE `martyr_martyr`.`name` LIKE '$name%'")->row();
+        WHERE `martyr_martyr`.`name` LIKE '%$name%'")->row();
 		return $query;
 	}
 }

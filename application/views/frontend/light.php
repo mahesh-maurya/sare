@@ -71,7 +71,11 @@
   <div class="lamp-head text-center">
       <img src="<?php echo base_url("uploads");?><?php echo "/".$row->image;?>" class="lamp-img" height="250px" width="200px">
       <h3><?php echo $row->name;?></h3>
-      <h4><?php echo $row->dateofdeath;?></h4>
+      <h4><?php 
+$originalDate = $row->dateofdeath;
+$newDate = date("jS F Y", strtotime($originalDate));
+echo $newDate;
+          ?></h4>
       <div class="lamp-light">
 <!--          <div class="candle"></div>-->
         <img src="<?php echo base_url('assets/images/lamp.gif'); ?>">

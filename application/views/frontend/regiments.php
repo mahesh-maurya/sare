@@ -46,7 +46,11 @@
 					<li>
 						<a href="<?php echo site_url('website/detail?id=').$row->id;?>">
 							<img src="<?php echo base_url("uploads");?><?php echo "/".$row->image;?>">
-							<div class="fonts"><span><?php echo $row->name;?></span><p><?php echo $row->dateofdeath;?></p></div>
+							<div class="fonts"><span><?php echo $row->name;?></span><p><?php 
+$originalDate = $row->dateofdeath;
+$newDate = date("jS F Y", strtotime($originalDate));
+echo $newDate;
+          ?></p></div>
 						</a>
 					</li>
 					</ul>

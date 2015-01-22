@@ -38,7 +38,11 @@
                <div class="detail-text">
                    <h4><?php echo $row->name."(".$row->homestate.")";?></h4>
                    <h5><?php echo $row->operation;?></h5>
-                   <h6><?php echo $row->dateofdeath;?></h6>
+                   <h6><?php 
+$originalDate = $row->dateofdeath;
+$newDate = date("jS F Y", strtotime($originalDate));
+echo $newDate;
+          ?></h6>
                    <h6><?php echo "Age- ".$row->age;?></h6>
                    <h6><?php echo $row->unit;?></h6>
                    
