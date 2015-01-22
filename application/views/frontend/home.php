@@ -4,7 +4,7 @@
 </div>
 -->
 <div class="head-reg text-center">
-              <h2>LIGHT A LAMP OR SEND A MESSAGE FOR MARTYR</h2>
+              <h2>LIGHT A LAMP OR SEND A MESSAGE FOR MARTYR FAMILY</h2>
               </div>
 <?php
 $cats1=$category->children[0]->children;
