@@ -38,7 +38,7 @@
             <form action="<?php echo site_url('website/sendmessagesubmit');?>" method="POST">
                 <fieldset>
                     <legends>Send a Message</legends>
-                    <p class="name-msg">To: Lt. Mahesh Maurya’s Family</p>
+                    <p class="name-msg">To: <?php echo $row->name;?>’s Family</p>
                     <div style="display:none;">
                         <input type="text" name="id" placeholder="Martyr id" value="<?php echo $id;?>" class="classajax" />
                     </div>
