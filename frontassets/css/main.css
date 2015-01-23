@@ -100,11 +100,29 @@ body {
 }
 .defence {
     margin: 20px auto;
-    background: url("../image/background.jpg") no-repeat;
-    background-size: cover;
-    height: 280px;
+
     width: 850px
 }
+.india-img{
+ background: url("../image/india.png") no-repeat center center;
+      background-size: cover;
+
+}
+.ministri.text-center i {
+    font-style: normal;  font-family: pt sans;  text-transform: capitalize;  
+    background: rgba(230, 120, 23, 0.82);  border-radius: 100px;  
+    height: 150px;  
+    width: 150px;  
+    padding: 60px 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+.home-img{
+ background: url("../image/home2.png") no-repeat center center;
+      background-size: cover;
+}
+
 span.tobedone {
     display: none;
 }

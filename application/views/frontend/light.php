@@ -66,6 +66,7 @@
                     </div>
   </div>
   <div class="regi">
+    <div class="india-img">
    <div class="container pages">
       <div class="">
   <div class="lamp-head text-center">
@@ -85,6 +86,7 @@ echo $newDate;
            
        </div>
        
+   </div>
    </div>
    </div>
     </div>
