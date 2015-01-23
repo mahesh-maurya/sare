@@ -3,10 +3,13 @@
     <h2>Light a lamp or send a message for Martyr </h2>
 </div>
 -->
+<?php
+//print_r($category);
+?>
 <div class="head-reg text-center">
     <h2>LIGHT A LAMP OR SEND A MESSAGE FOR MARTYR FAMILY</h2>
 </div>
-<?php $cats1=$category->children[0]->children; $cats2=$category->children[1]->children; //print_r($cats2); ?>
+<?php $cats1=$category->children[0]->children; $cats2=$category->children[1]->children;$cats3=$category->children[2]->children; //print_r($cats2); ?>
 <div class="home-img">
     <div class="container">
         <div class="row">
@@ -63,15 +66,17 @@
             $subcategory=$cat->children;
         ?>          
 		<ul class="bcd">
-		    <?php foreach($subcategory as $sub) {?>
-			<li ><a href="regiments.html"><?php echo $sub->name;?></a>
+		    <?php
+//    print_r($subcategory);
+    foreach($subcategory as $sub) {?>
+			<li ><a href="<?php echo site_url('website/regiments?category=').$sub->id;?>"><?php echo $sub->name;?></a>
 		
 		            <ul class="megamenu">
             <?php 
             $subcategory1=$subcategory->children;
         ?>  
             <?php foreach($subcategory1 as $sub1) { ?>
-			    <li><a href="regiments.php"><?php echo $sub1->name;?></a></li>
+			    <li><a href="<?php echo site_url('website/regiments?category=').$sub->id;?>"><?php echo $sub1->name;?></a></li>
 			 <?php } ?>
 			</ul>
 			
@@ -91,7 +96,7 @@
                                    
                       <ul class="cssMenu cssMenu2">
                       
-	<?php foreach($cats1 as $cat) {
+	<?php foreach($cats2 as $cat) {
                           ?>
 	<li>
 	
@@ -101,14 +106,14 @@
         ?>          
 		<ul class="bcd">
 		    <?php foreach($subcategory as $sub) {?>
-			<li ><a href="regiments.html"><?php echo $sub->name;?></a>
+			<li ><a href="<?php echo site_url('website/regiments?category=').$sub->id;?>"><?php echo $sub->name;?></a>
 		
 		            <ul class="megamenu">
             <?php 
             $subcategory1=$subcategory->children;
         ?>  
             <?php foreach($subcategory1 as $sub1) { ?>
-			    <li><a href="regiments.php"><?php echo $sub1->name;?></a></li>
+			    <li><a href="<?php echo site_url('website/regiments?category=').$sub->id;?>"><?php echo $sub1->name;?></a></li>
 			 <?php } ?>
 			</ul>
 			
@@ -129,7 +134,7 @@
                                    
                       <ul class="cssMenu cssMenu3">
                       
-	<?php foreach($cats1 as $cat) {
+	<?php foreach($cats3 as $cat) {
                           ?>
 	<li>
 	
@@ -139,14 +144,14 @@
         ?>          
 		<ul class="bcd">
 		    <?php foreach($subcategory as $sub) {?>
-			<li ><a href="regiments.html"><?php echo $sub->name;?></a>
+			<li ><a href="<?php echo site_url('website/regiments?category=').$sub->id;?>"><?php echo $sub->name;?></a>
 		
 		            <ul class="megamenu">
             <?php 
             $subcategory1=$subcategory->children;
         ?>  
             <?php foreach($subcategory1 as $sub1) { ?>
-			    <li><a href="regiments.php"><?php echo $sub1->name;?></a></li>
+			    <li><a href="<?php echo site_url('website/regiments?category=').$sub->id;?>"><?php echo $sub1->name;?></a></li>
 			 <?php } ?>
 			</ul>
 			
