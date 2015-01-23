@@ -8,13 +8,13 @@
     <div class="col-lg-12">
         <section class="panel">
             <header class="panel-heading">
-                martyr Details
+                martyr Details(Assign a Martyr to last level)
             </header>
             <div class="panel-body">
                 <form class='form-horizontal tasi-form' method='post' action='<?php echo site_url("site/createmartyrsubmit");?>' enctype='multipart/form-data'>
                     <div class="panel-body">
                         <div class=" form-group">
-                            <label class="col-sm-2 control-label" for="normal-field">Regiment</label>
+                            <label class="col-sm-2 control-label" for="normal-field">Last Level</label>
                             <div class="col-sm-4">
                                 <?php echo form_dropdown( "regiment",$regiment,set_value( 'regiment'), "class='chzn-select form-control'");?>
                             </div>
@@ -95,7 +95,7 @@
                             <label class="col-sm-2 control-label" for="normal-field">&nbsp;</label>
                             <div class="col-sm-4">
                                 <button type="submit" class="btn btn-primary">Save</button>
-                                <a href="<?php echo site_url(" site/viewpage "); ?>" class="btn btn-secondary">Cancel</a>
+                                <a href="<?php echo site_url("site/viewmartyr"); ?>" class="btn btn-secondary">Cancel</a>
                             </div>
                         </div>
                 </form>
