@@ -15,140 +15,24 @@
                 <div class="row">
                     <div class="col-md-4 ">
                         <div class="ministri text-center">
-                            <div class="section1">
+                            <div class="section1 menu">
                                 <i class="show">ministry of Defence</i>
-                                <!--
-                            <span class="tobedone">
-                                   
-                      <ul class="cssMenu">
-	<?php foreach($cats2 as $cat) {
-                          ?>
-	<li>
-	
-		<a href="#" class="abc"><?php echo $cat->name;?></a> 
-		<?php 
-            $subcategory=$cat->children;
-        ?>          
-		<ul class="bcd">
-		    <?php foreach($subcategory as $sub) {?>
-			<li><a href="<?php echo site_url('website/regiments?category=').$sub->id;?>"><?php echo $sub->name;?></a>
-				
-            <ul class="megamenu">
-            <?php 
-            $subcategory1=$subcategory->children;
-        ?>  
-            <?php foreach($subcategory1 as $sub1) { ?>
-			    <li><?php echo $sub1->name;?></li>
-			 <?php } ?>
-			</ul>
-			
-			
-			</li>
-			<?php } ?>
-			
-		</ul>
-	</li>
-	<?php } ?>
-	
-</ul>
-    
-                                </span>
--->
-
                             </div>
                         </div>
 
                     </div>
                     <div class="col-md-4">
                         <div class="ministri text-center">
-                            <div class=" menu">
+                            <div class="section2 menu">
                                 <i class="show img-po">ministry of home central</i>
 
-                                <!--
-                            <span class="tobedone done pull-right">
-                                   
-                      <ul class="cssMenu cssMenu2">
-                      
-	<?php foreach($cats1 as $cat) {
-                          ?>
-	<li>
-	
-		<a href="#" class="abc"><?php echo $cat->name;?></a> 
-		<?php 
-            $subcategory=$cat->children;
-        ?>          
-		<ul class="bcd">
-		    <?php foreach($subcategory as $sub) {?>
-			<li ><a href="regiments.html"><?php echo $sub->name;?></a>
-		
-		            <ul class="megamenu">
-            <?php 
-            $subcategory1=$subcategory->children;
-        ?>  
-            <?php foreach($subcategory1 as $sub1) { ?>
-			    <li><a href="regiments.php"><?php echo $sub1->name;?></a></li>
-			 <?php } ?>
-			</ul>
-			
-			</li>
-			<?php } ?>
-			
-		</ul>
-	</li>
-	<?php } ?>
-	
-</ul>
-
-    
-                                </span>
--->
-
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="ministri text-center">
-                            <div class=" menu">
+                            <div class="section3 menu">
                                 <i class="show img-po">ministry of home state</i>
-                                <!--
-
-                            <span class="tobedone done pull-right">
-                                   
-                      <ul class="cssMenu cssMenu2">
-                      
-	<?php foreach($cats1 as $cat) {
-                          ?>
-	<li>
-	
-		<a href="#" class="abc"><?php echo $cat->name;?></a> 
-		<?php 
-            $subcategory=$cat->children;
-        ?>          
-		<ul class="bcd">
-		    <?php foreach($subcategory as $sub) {?>
-			<li ><a href="regiments.html"><?php echo $sub->name;?></a>
-		
-		            <ul class="megamenu">
-            <?php 
-            $subcategory1=$subcategory->children;
-        ?>  
-            <?php foreach($subcategory1 as $sub1) { ?>
-			    <li><a href="regiments.php"><?php echo $sub1->name;?></a></li>
-			 <?php } ?>
-			</ul>
-			
-			</li>
-			<?php } ?>
-			
-		</ul>
-	</li>
-	<?php } ?>
-	
-</ul>
-
-    
-                                </span>
--->
 
                             </div>
                         </div>
@@ -159,15 +43,16 @@
         </div>
 
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-1" ></div>
+<div class="col-md-10">
 
 
-
-                <span class="tobedone done">
+            <span class="tobedone done">
                                    
-                      <ul class="cssMenu cssMenu2">
+                      <ul class="cssMenu cssMenu1">
                       
 	<?php foreach($cats1 as $cat) {
                           ?>
@@ -202,11 +87,93 @@
     
                                 </span>
 
+ <span class="tobedone done">
+                                   
+                      <ul class="cssMenu cssMenu2">
+                      
+	<?php foreach($cats1 as $cat) {
+                          ?>
+	<li>
+	
+		<a href="#" class="abc"><?php echo $cat->name;?></a> 
+		<?php 
+            $subcategory=$cat->children;
+        ?>          
+		<ul class="bcd">
+		    <?php foreach($subcategory as $sub) {?>
+			<li ><a href="regiments.html"><?php echo $sub->name;?></a>
+		
+		            <ul class="megamenu">
+            <?php 
+            $subcategory1=$subcategory->children;
+        ?>  
+            <?php foreach($subcategory1 as $sub1) { ?>
+			    <li><a href="regiments.php"><?php echo $sub1->name;?></a></li>
+			 <?php } ?>
+			</ul>
+			
+			</li>
+			<?php } ?>
+			
+		</ul>
+	</li>
+	<?php } ?>
+	
+</ul>
+
+    
+                 </span>
 
 
-            </div>
+            <span class="tobedone done">
+                                   
+                      <ul class="cssMenu cssMenu3">
+                      
+	<?php foreach($cats1 as $cat) {
+                          ?>
+	<li>
+	
+		<a href="#" class="abc"><?php echo $cat->name;?></a> 
+		<?php 
+            $subcategory=$cat->children;
+        ?>          
+		<ul class="bcd">
+		    <?php foreach($subcategory as $sub) {?>
+			<li ><a href="regiments.html"><?php echo $sub->name;?></a>
+		
+		            <ul class="megamenu">
+            <?php 
+            $subcategory1=$subcategory->children;
+        ?>  
+            <?php foreach($subcategory1 as $sub1) { ?>
+			    <li><a href="regiments.php"><?php echo $sub1->name;?></a></li>
+			 <?php } ?>
+			</ul>
+			
+			</li>
+			<?php } ?>
+			
+		</ul>
+	</li>
+	<?php } ?>
+	
+</ul>
+
+    
+             </span>
+
+
         </div>
     </div>
+</div>
+
+
+
+<div class="">
+    <audio class="mybackground">
+        <source src="<?php echo base_url('frontassets/audio/sare.mp3'); ?>" type="audio/mpeg">
+            Your browser does not support the audio element.
+    </audio>
 </div>
 <!--
 <div class="disc">
@@ -216,10 +183,31 @@
 <script>
     $(document).ready(function () {
 
-        $(".section1 .show").click(function () {
-            //                console.log("ABCD");
-            $(".section1 span.tobedone").fadeOut(0);
-            $(this).parents(".section1").children("span.tobedone ").fadeIn(0);
+        $(".cssMenu").hide();
+            
+        $(".section1").click(function () {
+            $(".menu").removeClass("active");
+            $(this).addClass("active");
+            $(".cssMenu").hide();
+            $(".cssMenu1").show(300);
+            
         });
+        $(".section2").click(function () {
+             $(".menu").removeClass("active");
+            $(this).addClass("active");
+            $(".cssMenu").hide();
+            $(".cssMenu2").show(300);
+            
+        });
+        $(".section3").click(function () {
+             $(".menu").removeClass("active");
+            $(this).addClass("active");
+            $(".cssMenu").hide();
+            $(".cssMenu3").show(300);
+            
+        });
+        $(".mybackground").get(0).loop = true;
+        //$(".mybackground").get(0).autoplay=true;
+
     });
 </script>

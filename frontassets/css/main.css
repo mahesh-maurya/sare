@@ -100,31 +100,33 @@ body {
 }
 .defence {
     margin: 20px auto;
-
     width: 850px
 }
-.india-img{
- background: url("../image/india.png") no-repeat center center;
-      background-size: cover;
-
+.india-img {
+    background: url("../image/india.png") no-repeat center center;
+    background-size: cover;
 }
 .ministri.text-center i {
-    font-style: normal;  font-family: pt sans;  text-transform: capitalize;  
-    background: rgba(230, 120, 23, 0.82);  border-radius: 100px;  
-    height: 150px;  
-    width: 150px;  
-    padding: 60px 10px;
+    font-style: normal;
+    font-family: pt sans;
+    text-transform: capitalize;
+    background: rgba(230, 120, 24, 1);
+    border-radius: 100px;
+    height: 160px;
+    width: 160px;
+    padding: 60px 15px;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
+    -webkit-transition: all 0.5s;
+    border: 2px solid;
 }
-.home-img{
- background: url("../image/home2.png") no-repeat center center;
-      background-size: cover;
+.home-img {
+    background: url("../image/home2.png") no-repeat center center;
+    background-size: cover;
 }
-
 span.tobedone {
-    display: none;
+    /*    display: none;*/
 }
 i.show {
     margin: 46px auto;
@@ -162,17 +164,20 @@ ul.cssMenu ul {
     padding: 0;
     position: relative;
     display: flex;
+    margin-top: 5px;
 }
 .cssMenu > li {
     width: 101px;
     color: white;
-    border-top: 2px solid #E67817;
+    border-top: 4px solid #E67817;
     margin: 3px 8px 32px 0px;
-    padding: 6px 0;
-    border-left: 1px solid #E8E8E8;
-    border-right: 1px solid #E8E8E8;
-    border-bottom: 2px solid #5B8E29;
+    padding: 3px 0;
+    /* border-left: 1px solid #E8E8E8; */
+    /* border-right: 1px solid #E8E8E8; */
+    border-bottom: 4px solid #5B8E29;
     height: 35px;
+    text-align: center;
+    cursor: pointer;
 }
 ul.cssMenu ul {
     display: none;
@@ -720,37 +725,47 @@ ul.bcd li {
 .cssMenu.cssMenu2 > li {
     margin: 3px 0px 0px 8px;
 }
-
-.bcd ul.megamenu{
-position: absolute;
-left: 100%;
-top: -8px;
-color: rgb(0, 87, 156);
-font-family: pt sans;
-width: 100%;
+.bcd ul.megamenu {
+    position: absolute;
+    left: 100%;
+    top: -8px;
+    color: rgb(0, 87, 156);
+    font-family: pt sans;
+    width: 100%;
 }
 .light {
-border: 1px solid blue;
-padding: 6px 10px 6px 10px;
-font-family: pt sans;
-position: relative;
-bottom: 35px;
-left: 20px;
+    border: 1px solid blue;
+    padding: 6px 10px 6px 10px;
+    font-family: pt sans;
+    position: relative;
+    bottom: 35px;
+    left: 20px;
 }
 .light i.fa.fa-fire {
-background: #00579C;
-padding: 8px 10px;
-/* border: 1px solid blue; */
-position: re;
-/* border-right: 1px solid; */
-position: relative;
-left: -11px;
-color: #fff;
+    background: #00579C;
+    padding: 8px 10px;
+    /* border: 1px solid blue; */
+    position: re;
+    /* border-right: 1px solid; */
+    position: relative;
+    left: -11px;
+    color: #fff;
 }
-.name-msg{
-font-size: 15px;
-color: rgb(0, 87, 156);
-font-weight: bold;
-position: relative;
-bottom: 33px;
+.name-msg {
+    font-size: 15px;
+    color: rgb(0, 87, 156);
+    font-weight: bold;
+    position: relative;
+    bottom: 33px;
+}
+.ministri.text-center i:hover {
+    background: white;
+    color: rgb(230, 120, 23);
+    border: 2px solid rgb(230, 120, 23);
+}
+
+.ministri.text-center .active i {
+    background: white;
+    color: rgb(230, 120, 23);
+    border: 2px solid rgb(230, 120, 23);
 }

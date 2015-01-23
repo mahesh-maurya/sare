@@ -114,3 +114,34 @@ echo $newDate;
 
     });
 		</script>
+<script>
+    $(document).ready(function () {
+
+        $(".cssMenu").hide();
+            
+        $(".section1").click(function () {
+            $(".menu").removeClass("active");
+            $(this).addClass("active");
+            $(".cssMenu").hide();
+            $(".cssMenu1").show(300);
+            
+        });
+        $(".section2").click(function () {
+             $(".menu").removeClass("active");
+            $(this).addClass("active");
+            $(".cssMenu").hide();
+            $(".cssMenu2").show(300);
+            
+        });
+        $(".section3").click(function () {
+             $(".menu").removeClass("active");
+            $(this).addClass("active");
+            $(".cssMenu").hide();
+            $(".cssMenu3").show(300);
+            
+        });
+        $(".mybackground").get(0).loop = true;
+        $(".mybackground").get(0).autoplay=true;
+
+    });
+</script>
